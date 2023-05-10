@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google fonts links for Spline sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <title>Alpacka | Hero Section</title>
+</head>
+<body>
+    
+    <main class="main__container">
+        <nav class="navigation">
+            <div class="navigation__logo">
+                <a href="#" class="navigation__logo--link">Alpacka</a>
+                <span class="navigation__logo--superscript">(Sweden)</span>
+            </div>
+
+            <ul class="navigation__list">
+                <li class="navigation__list--item"><a href="#">Approach,</a></li>
+                <li class="navigation__list--item"><a href="#">Work,</a></li>
+                <li class="navigation__list--item"><a href="#">Services,</a></li>
+                <li class="navigation__list--item"><a href="#">About</a></li>
+            </ul>
+
+            <a href="#" class="navigation__contact">Contact</a>
+        </nav>
+
+        <div class="content">
+            <div class="content__videopreview">
+                <div class="content__videopreview--nav">
+                    <p>Motto</p>
+                    <a href="#">See all work</a>
+                </div>
+                <div class="content__videopreview--media">
+                    <video width="320" height="240" autoplay muted loop>
+                        <source src="./assets/alpacka-showreel.mp4" type="video/mp4">
+                        Your browser does not support the video tag
+                    </video>
+                </div>
+            </div>
+
+            <p class="content__paragraph">is a swedish development company that creates award winning innovative online experiences.</p>
+        </div>
+
+        <p class="main__container--scroll">Scroll</p>
+    </main>
+
+    <!-- GSAP core CDN-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+</html>
