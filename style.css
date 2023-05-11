@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spline Sans', sans-serif;
+    font-size: 12px;
+}
+
+body {
+    overflow: hidden;
+}
+
+.main__container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    padding: 1rem 3rem 2rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation .navigation__logo {
+    display: flex;
+    align-items: flex-start;
+}
+
+.navigation .navigation__logo--link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 4rem;
+    color: #000000;
+}
+
+.navigation .navigation__logo--superscript {
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.navigation .navigation__contact {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.navigation .navigation__contact::before,
+.content .video__container .video__container--nav a::before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    bottom: -.3rem;
+    left: 0;
+    transition: .35s ease-out;
+}
+
+.navigation .navigation__contact::after,
+.content .video__container .video__container--nav a::after {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 2px;
+    background-color: #000000;
+    bottom: -.3rem;
+    right: 0;
+    transition: .35s ease-out;
+}
+
+.navigation .navigation__contact:hover::before,
+.navigation .navigation__contact:hover::after,
+.content .video__container .video__container--nav a:hover::before,
+.content .video__container .video__container--nav a:hover::after {
+    width: 0;
+} 
+
+.navigation .navigation__list {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin-right: 6rem;
+}
+
+.navigation .navigation__list .navigation__list--item {
+    list-style: none;
+    margin: 0 .3rem;
+}
+
+.navigation .navigation__list .navigation__list--item a,
+.content .video__container .video__container--nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    position: relative;
+}
+
+.content .video__container .video__container--nav a {
+    font-size: 1.2rem;
+}
+
+.navigation .navigation__list .navigation__list--item a::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    bottom: -.3rem;
+    left: 0;
+    transition: .35s ease-out;
+}
+
+.navigation .navigation__list .navigation__list--item a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    bottom: -.3rem;
+    right: 0;
+    transition: .35s ease-out;
+}
+
+.navigation .navigation__list .navigation__list--item a:hover::after,
+.navigation .navigation__list .navigation__list--item a:hover::before {
+    width: 50%;
+}
+
+.content {
+    position: absolute;
+    bottom: 2rem;
+    left: 3rem;
+    padding: 0 3rem 0 0;
+}
+
+.content .video__container {
+    float: left;
+    aspect-ratio: 16/9;
+    margin-right: 1.5rem;
+}
+
+.content .video__container .video__container--nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .video__container .video__container--nav p {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.video__container .video__container--media {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.video__container .video__container--media .video {
+    width: 100%;
+}
+
+.content .content__wrapper--paragraph {
+    text-align: justify;
+    font-size: 5rem;
+    font-weight: 500;
+    padding-top: 18rem;
+    line-height: 1;
+}
+
+.main__container--scroll {
+    position: absolute;
+    bottom: 2rem;
+    right: 3rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
