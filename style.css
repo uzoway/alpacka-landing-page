@@ -15,6 +15,8 @@ body {
     height: 100vh;
     position: relative;
     padding: 1rem 3rem 2rem;
+    position: relative;
+    background-color: #fff;
 }
 
 .navigation {
@@ -32,7 +34,9 @@ body {
     text-decoration: none;
     font-weight: 500;
     font-size: 4rem;
-    color: #000000;
+    color: #fff;
+    mix-blend-mode: difference;
+    z-index: 100;
 }
 
 .navigation .navigation__logo--superscript {
@@ -177,4 +181,62 @@ body {
     right: 3rem;
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+
+
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-family: 'Spline Sans', sans-serif;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 2;
+    color: #fff;
+}
+
+.preloader .counter {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-start;
+    transform: translateY(-50%);
+    height: 4.2rem;
+    margin-right: 3rem;
+    background-color: red;
+    overflow: hidden;
+}
+
+.counter__container {
+    transform: translateY(0);
+    /* animation: loadCounter 4s ease-in; */
+}
+
+/* @keyframes loadCounter {
+    0% {
+        transform: translateY(0%);
+    }
+    33% {
+        transform: translateY(-25%);
+    }
+    66% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(-75%);
+    }
+} */
+
+.preloader .counter .counter__percent span,
+.preloader .counter .counter__wrapper span {
+    font-size: 5rem;
+    line-height: .8;
+}
+
+.preloader .counter .counter__wrapper .row {
+    text-align: right;
 }
