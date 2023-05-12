@@ -1,3 +1,9 @@
+
+
+https://github.com/uzoway/alpacka-landing-page/assets/73430874/6d3aae05-82bf-4c99-a7b6-80f6e595cf32
+
+
+
 # Alpacka landing page
 
 This is a recreation of one of the designs of the super-talented [Gil Huybrecht](https://www.instagram.com/gil.huybrecht/?hl=en). I am a huge fan of his work and when I saw this particular hero section design/prototype, I decided to recreate it using HTML, CSS and JS. It is a hero section of the landing page of one of his ongoing project for Alpacka. It was a lot of fun figuring out the right timing and easing for the animations. Those are two key parts of a good animation.
